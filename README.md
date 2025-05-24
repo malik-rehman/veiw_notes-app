@@ -1,16 +1,28 @@
-# firebase_authentication
+## 🔥 Firebase Integration in Flutter Project
 
-A new Flutter project.
+This project uses **Firebase** to store user-generated notes in Firestore.
 
-## Getting Started
+### 📦 Firebase Services Used
 
-This project is a starting point for a Flutter application.
+- **Cloud Firestore** – to store and retrieve notes in real-time.
+- *(Optional: Firebase Authentication, if you plan to add login/signup)*
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🔧 Firebase Setup Instructions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Go to [https://console.firebase.google.com](https://console.firebase.google.com) and create a new project.
+2. Click **"Add App"** and select **Flutter**.
+3. Follow the steps to download the `google-services.json` file and place it in `android/app/`.
+4. Enable **Cloud Firestore** from the Firebase Console.
+5. Update your **Firestore Rules** to allow reads/writes (for testing):
+
+   ```js
+   rules_version = '2';
+   service cloud.firestore {
+     match /databases/{database}/documents {
+       match /{document=**} {
+         allow read, write: if true;
+       }
+     }
+   }
