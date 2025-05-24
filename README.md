@@ -1,4 +1,16 @@
-# veiw_notes-app
-This is the app for storing notes in firebase store and veiw these notes in the new screen of your app.
-User defined notes stored in firestore using some built-in functions.
-After storing notes in the firestore user can list their notes in the new screen of app.
+# firebase_authentication
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
